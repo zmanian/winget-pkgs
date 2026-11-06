@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+PackageIdentifier: TraceCommons.Contributor
+PackageVersion: 0.24.10
+Platform:
+- Windows.Desktop
+MinimumOSVersion: 10.0.0.0
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: trace-commons-contributor.exe
+  PortableCommandAlias: trace-commons-contributor
+Commands:
+- trace-commons-contributor
+ReleaseDate: "2026-11-06"
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/TraceCommons/trace-commons/releases/download/contributor-v0.24.10/trace-commons-contributor-x86_64-pc-windows-msvc.zip
+  InstallerSha256: 2AC51C0D25B32D46748095B9D1B0EFEA80E43DF7A52A2BD7029E64F4CF0E1D67
+ManifestType: installer
+ManifestVersion: 1.12.0
